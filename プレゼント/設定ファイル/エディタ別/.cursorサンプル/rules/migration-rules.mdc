@@ -1,0 +1,8 @@
+# migrationルール
+
+- migrationファイルを新規作成する際は、数字部分を現在datetimeのyyyymmddhissにしろ (例えば現在が2025/12/24 23:25:59なら、20251224232559_create_model.rb)
+- 過去のmigrationファイルは編集禁止
+- テーブル追加時
+  - modelも作成しろ
+  - 関連model側にもhas_manyなどの関連付けをしろ
+    
